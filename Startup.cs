@@ -28,6 +28,8 @@ namespace _35551178_Project2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddDbContext<ConnectedOfficeContext>(options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
+            services.AddSwaggerGen(options => { options.SwaggerDoc("v2", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "The RESTful API", Version = "v2", Description = "IoT devices managed using the Cloud", }); });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +50,8 @@ namespace _35551178_Project2
             {
                 endpoints.MapControllers();
             });
+            app.UseSwagger(); 
+            app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v2/swagger.json", "_35551178_Project2"));
         }
     }
 }

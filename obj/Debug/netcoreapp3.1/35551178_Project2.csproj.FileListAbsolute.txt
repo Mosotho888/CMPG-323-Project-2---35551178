@@ -130,3 +130,8 @@ C:\Users\Dell\Documents\CMPG 323\Project 2\35551178_Project2\bin\Debug\netcoreap
 C:\Users\Dell\Documents\CMPG 323\Project 2\35551178_Project2\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Dell\Documents\CMPG 323\Project 2\35551178_Project2\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Dell\Documents\CMPG 323\Project 2\35551178_Project2\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dell\Documents\CMPG 323\Project 2\35551178_Project2\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Dell\Documents\CMPG 323\Project 2\35551178_Project2\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Dell\Documents\CMPG 323\Project 2\35551178_Project2\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Dell\Documents\CMPG 323\Project 2\35551178_Project2\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Dell\Documents\CMPG 323\Project 2\35551178_Project2\obj\Debug\netcoreapp3.1\35551178_Project2.MvcApplicationPartsAssemblyInfo.cs
