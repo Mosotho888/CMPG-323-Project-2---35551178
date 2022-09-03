@@ -10105,11 +10105,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dell\\Documents\\CMPG 323\\Project 2\\35551178_Project2\\35551178_Project2.csproj",
+      "projectUniqueName": "C:\\Users\\Dell\\Documents\\CMPG 323\\Project 2\\project\\35551178_Project2.csproj",
       "projectName": "35551178_Project2",
-      "projectPath": "C:\\Users\\Dell\\Documents\\CMPG 323\\Project 2\\35551178_Project2\\35551178_Project2.csproj",
+      "projectPath": "C:\\Users\\Dell\\Documents\\CMPG 323\\Project 2\\project\\35551178_Project2.csproj",
       "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dell\\Documents\\CMPG 323\\Project 2\\35551178_Project2\\obj\\",
+      "outputPath": "C:\\Users\\Dell\\Documents\\CMPG 323\\Project 2\\project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
