@@ -43,6 +43,21 @@ namespace _35551178_Project2.Controllers
             return zone;
         }
 
+        // GET: api/Zones/id/getAllDevicesFromSameZone
+        [HttpGet("{id}/ getAllDevicesFromSameZone")]
+        public async Task<ActionResult<IEnumerable<Device>>> GetDevice(Guid id)
+        {
+            var zone = await _context.Device.Where(p => p.ZoneId == id).ToListAsync();
+
+
+            if (zone == null)
+            {
+                return NotFound();
+            }
+
+            return zone;
+        }
+
         // PUT: api/Zones/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.

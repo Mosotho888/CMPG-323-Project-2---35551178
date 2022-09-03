@@ -43,6 +43,21 @@ namespace _35551178_Project2.Controllers
             return category;
         }
 
+        // GET: api/Categories/id/getAllDevicesFromSameCategory
+        [HttpGet("{id}/ getAllDevicesFromSameCategory")]
+        public async Task<ActionResult<IEnumerable<Device>>> GetDevice(Guid id)
+        {
+            var category = await _context.Device.Where(p => p.CategoryId == id).ToListAsync();
+            
+
+            if (category == null)
+            {
+                return NotFound();
+            }
+
+            return category;
+        }
+
         // PUT: api/Categories/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
