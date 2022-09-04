@@ -58,6 +58,48 @@ namespace _35551178_Project2.Controllers
             return category;
         }
 
+        // GET: api/Categories/5
+        [HttpGet("{id}/ number of zones")]
+        public async Task<ActionResult<IEnumerable<Zone>>> GetDevices(Guid id)
+        {
+            int zones = 1;
+            var place = (dynamic)null;
+
+            var category = await (from d in _context.Device
+                           join c in _context.Category
+                           on d.CategoryId equals c.CategoryId
+                           join z in _context.Zone
+                           on d.ZoneId equals z.ZoneId
+                           where c.CategoryId == id
+                           select new Zone()
+                           {
+                      
+                               ZoneName = z.ZoneName,
+                               
+                           }).ToListAsync();
+            
+            foreach(var area in category)
+            {
+                place = area;
+                break;
+            }
+
+            foreach (var area in category)
+            {
+                if (place != area)
+                {
+                    zones++;
+                }
+            }
+
+            if (category == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(zones);
+        }
+
         // PUT: api/Categories/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
