@@ -46,8 +46,8 @@ namespace _35551178_Project2.Controllers
         // PUT: api/Devices/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutDevice(Guid id, Device device)
+        [HttpPatch("{id}")]
+        public async Task<IActionResult> PatchDevice(Guid id, Device device)
         {
             if (id != device.DeviceId)
             {

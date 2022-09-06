@@ -61,8 +61,8 @@ namespace _35551178_Project2.Controllers
         // PUT: api/Zones/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutZone(Guid id, Zone zone)
+        [HttpPatch("{id}")]
+        public async Task<IActionResult> PatchZone(Guid id, Zone zone)
         {
             if (id != zone.ZoneId)
             {
