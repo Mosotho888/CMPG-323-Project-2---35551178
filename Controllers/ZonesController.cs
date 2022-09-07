@@ -58,7 +58,7 @@ namespace _35551178_Project2.Controllers
             return zone;
         }
 
-        // PUT: api/Zones/5
+        // PATCH: api/Zones/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPatch("{id}")]
@@ -121,7 +121,7 @@ namespace _35551178_Project2.Controllers
         public async Task<ActionResult<Zone>> DeleteZone(Guid id)
         {
             var zone = await _context.Zone.FindAsync(id);
-            if (zone == null)
+            if (!ZoneExists(id))
             {
                 return NotFound();
             }

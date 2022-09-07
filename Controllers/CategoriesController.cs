@@ -100,7 +100,7 @@ namespace _35551178_Project2.Controllers
             return Ok(zones);
         }
 
-        // PUT: api/Categories/5
+        // PATCH: api/Categories/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPatch("{id}")]
@@ -164,7 +164,7 @@ namespace _35551178_Project2.Controllers
         public async Task<ActionResult<Category>> DeleteCategory(Guid id)
         {
             var category = await _context.Category.FindAsync(id);
-            if (category == null)
+            if (!CategoryExists(id))
             {
                 return NotFound();
             }

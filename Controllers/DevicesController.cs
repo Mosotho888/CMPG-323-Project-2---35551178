@@ -43,7 +43,7 @@ namespace _35551178_Project2.Controllers
             return device;
         }
 
-        // PUT: api/Devices/5
+        // PATCH: api/Devices/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPatch("{id}")]
@@ -106,7 +106,7 @@ namespace _35551178_Project2.Controllers
         public async Task<ActionResult<Device>> DeleteDevice(Guid id)
         {
             var device = await _context.Device.FindAsync(id);
-            if (device == null)
+            if (!DeviceExists(id))
             {
                 return NotFound();
             }
