@@ -130,7 +130,7 @@ namespace _35551178_Project2.Controllers
                 }
             }
 
-            return NoContent();
+            return Ok(category);
         }
 
         // POST: api/Categories

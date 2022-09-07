@@ -87,7 +87,7 @@ namespace _35551178_Project2.Controllers
                 }
             }
 
-            return NoContent();
+            return Ok(zone);
         }
 
         // POST: api/Zones
