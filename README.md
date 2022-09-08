@@ -33,6 +33,39 @@
 -> If a user wishes to delete a zone, they can click where it says DELETE /api/Zones/{id}, then click the Try it out button, enter the zoneID of the desired zone in the given textbox, and finally click the Execute button to delete the zone.\
 -> The user can select the area where it is written GET /api/Zones/{id}/getAllDevicesFromSameZone. Then click the Try it out button, enter the zoneID in the given textbox, and press the Execute button to see all the devices based on the same zone.
 
+# Endpoints
+## Authentication
+Authentication Login: https://apim-project2restapi.azure-api.net/api/Authenticate/login \
+Authentication register: https://apim-project2restapi.azure-api.net/api/Authenticate/register \
+Authentication register-Admin: https://apim-project2restapi.azure-api.net/api/Authenticate/register-admin 
+
+## Categories
+
+GET all categories -> https://apim-project2restapi.azure-api.net/api/Categories \
+POST category -> https://apim-project2restapi.azure-api.net/api/Categories \
+GET based on categoryID -> https://apim-project2restapi.azure-api.net/api/Categories/{id} \
+PATCH based on categoryID -> https://apim-project2restapi.azure-api.net/api/Categories/{id} \
+DELETE based on categoryID -> https://apim-project2restapi.azure-api.net/api/Categories/{id} \
+GET all devices based on same categoryID: -> https://apim-project2restapi.azure-api.net/api/Categories/{id}/ getAllDevicesFromSameCategory \
+GET number of zones based on categoryID -> https://apim-project2restapi.azure-api.net/api/Categories/{id}/ number of zones 
+
+## Devices
+
+GET all devices -> https://apim-project2restapi.azure-api.net/api/Devices \
+POST device -> https://apim-project2restapi.azure-api.net/api/Devices \
+GET based on deviceID -> https://apim-project2restapi.azure-api.net/api/Devices/{id} \
+PATCH based on deviceID -> https://apim-project2restapi.azure-api.net/api/Devices/{id} \
+DELETE based on deviceID -> https://apim-project2restapi.azure-api.net/api/Devices/{id} 
+
+## Zones
+
+GET all zones -> https://apim-project2restapi.azure-api.net/api/Zones \
+POST zone -> https://apim-project2restapi.azure-api.net/api/Zones \
+GET based on zoneID -> https://apim-project2restapi.azure-api.net/api/Zones/{id} \
+PATCH based on zoneID -> https://apim-project2restapi.azure-api.net/api/Zones/{id} \
+DELETE based on zoneID -> https://apim-project2restapi.azure-api.net/api/Zones/{id} \
+GET all devices based on zoneID -> https://apim-project2restapi.azure-api.net/api/Zones/{id}/ getAllDevicesFromSameZone
+
 # Reference
 
 -> c# Corner (2021). WebApi: WebApi Patch Update Using FromBody Parameter in WebApi Using MVC4 Template. [online] www.c-sharpcorner.com. Available at: https://www.c-sharpcorner.com/UploadFile/97fc7a/webapi-webapi-patch-update-using-frombody-parameter-in-web/ [Accessed 8 Sep. 2022]. \
