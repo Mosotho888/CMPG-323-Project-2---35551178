@@ -89,6 +89,7 @@ namespace _35551178_Project2.Controllers
                 if (place != area)
                 {
                     zones++;
+                    
                 }
             }
 
