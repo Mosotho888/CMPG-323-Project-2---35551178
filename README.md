@@ -66,6 +66,12 @@ PATCH based on zoneID -> https://apim-project2restapi.azure-api.net/api/Zones/{i
 DELETE based on zoneID -> https://apim-project2restapi.azure-api.net/api/Zones/{id} \
 GET all devices based on zoneID -> https://apim-project2restapi.azure-api.net/api/Zones/{id}/ getAllDevicesFromSameZone
 
+# API Manager Endpoints
+![Screenshot 2022-09-12 at 15-20-10 Microsoft Azure](https://user-images.githubusercontent.com/80751804/189667893-8e1348bd-1ca9-4ac2-8804-25b13edb8724.png) \
+![Screenshot 2022-09-12 at 15-23-13 Microsoft Azure](https://user-images.githubusercontent.com/80751804/189678613-9bf8758c-a518-4375-9760-88807dc641b5.png) \
+![Screenshot 2022-09-12 at 15-23-32 Microsoft Azure](https://user-images.githubusercontent.com/80751804/189678678-374aefb5-172c-4c83-a70d-e66bb6a5f410.png) \
+![Screenshot 2022-09-12 at 15-24-47 Microsoft Azure](https://user-images.githubusercontent.com/80751804/189678729-0d62575d-a441-46d1-8f47-fb2cc2083d24.png)
+
 # Reference
 
 -> c# Corner (2021). WebApi: WebApi Patch Update Using FromBody Parameter in WebApi Using MVC4 Template. [online] www.c-sharpcorner.com. Available at: https://www.c-sharpcorner.com/UploadFile/97fc7a/webapi-webapi-patch-update-using-frombody-parameter-in-web/ [Accessed 8 Sep. 2022]. \
